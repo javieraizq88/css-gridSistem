@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="STYLESHEET" type="text/css" href="css/reset.css">
+    <link rel="STYLESHEET" type="text/css" href="css/text.css">
+    <link rel="STYLESHEET" type="text/css" href="css/960.css">
+    <style type="text/css">
+        BODY {
+            background-color: #2b1f1f;
+            color: #FFF;
+            font-family: verdana, arial, helvetica;
+        }
+
+        A {
+            color: #bce7e4;
+        }
+
+        #cabecera {
+            background: #fff url(images/fondo-cabecera.gif) repeat-x;
+        }
+
+        #titulogeneral img {
+            padding: 28px 0 0 0;
+        }
+
+        #buscador {
+            background: transparent url(images/fondo-buscador.gif) no-repeat bottom right;
+            text-align: right;
+        }
+
+        #buscador input {
+            font-size: 8pt;
+        }
+
+        #buscador form {
+            padding: 40px 30px 6px 0px;
+        }
+
+        #cuerpo {
+            background-color: #000;
+        }
+
+        #navegador {
+            font-size: 12pt;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #navegador a {
+            color: #FFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #navegador ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navegador li {
+            float: left;
+            margin: 0 20px 0 0;
+            padding: 0;
+        }
+
+        .itemportada {
+            border: 3px solid #3b1010;
+            background-color: #3c2a2a;
+            padding: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .imagenitemportada {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .tituloitemportada {
+            font-weight: bold;
+            font-size: 120%;
+            margin-bottom: 6px;
+        }
+
+        .autoritemportada {
+            font-size: 8pt;
+            margin-bottom: 4px;
+        }
+
+        .introitemportada {}
+
+        .comentariositemportada {
+            font-size: 8pt;
+            margin-top: -10px;
+        }
+
+        .titlateral {
+            background-color: #4b0d0d;
+            padding: 10px;
+        }
+
+        .cuerpolateral {
+            background: #612323 url(images/fondo-cuerpo-lateral.gif) repeat-x;
+            overflow: hidden;
+            padding: 10px 7px 10px 7px;
+            margin-bottom: 15px;
+        }
+
+        .imagencuerpolateral {
+            float: left;
+        }
+
+        .cuerpolateral form {
+            margin: 0px;
+        }
+
+        .cuerpolateral form span {
+            display: block;
+            margin: 5px 0 5px 0;
+        }
+
+        .textocuerpolateral {
+            margin-left: 110px;
+        }
+
+        .cuerpolateral input {
+            font-size: 8pt;
+        }
+
+        .cuerpolateral ul {
+            list-style-type: none;
+            margin: 15px 0 0 0;
+            padding: 0;
+        }
+
+        .cuerpolateral li {
+            padding: 0 0 0 20px;
+            margin: 0 0 6px 0;
+            background: transparent url(images/estrellita.png) no-repeat scroll 0 4px;
+        }
+
+        .nube {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .nube span.etiqueta1 {
+            font-size: 100%
+        }
+
+        .nube span.etiqueta2 {
+            font-size: 120%
+        }
+
+        .nube span.etiqueta3 {
+            font-size: 140%
+        }
+
+        .nube span.etiqueta4 {
+            font-size: 160%
+        }
+
+        .nube span.etiqueta5 {
+            font-size: 180%
+        }
+
+        .nube span.etiqueta6 {
+            font-size: 200%
+        }
+
+        .nube span.etiqueta7 {
+            font-size: 220%
+        }
+
+        .nube span.etiqueta8 {
+            font-size: 240%
+        }
+
+        .nube span.etiqueta9 {
+            font-size: 260%
+        }
+
+        .nube span.etiqueta10 {
+            font-size: 280%
+        }
+
+        .nube a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .titcaja2 {
+            margin: 10px 0 0 3px;
+        }
+
+        .cuerponoticias {
+            line-height: 20pt;
+        }
+
+        .otrasecciontit {
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+
+        .cuerpocaja2 {
+            border: 2px solid #929191;
+            padding: 10px;
+        }
+
+        .cajacomunidad {
+            background-color: #333333;
+            padding-right: 0px;
+            padding-left: 2px;
+        }
+
+        #enlacespie {
+            font-size: 8pt;
+            margin: 6px 0 10px 0;
+        }
+
+        #enlacespie a {
+            color: #fff;
+        }
+
+        #logopie {
+            margin: 8px 0 10px 10px;
+        }
+
+        #pie {
+            background-color: #260505;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cabecera" class="container_12">
+        <div id="titulogeneral" class="grid_6 suffix_2">
+            <img src="images/a.jpg" width="443" height="30" alt="Diseño de una web desde cero">
+        </div>
+        <div id="buscador" class="grid_4">
+            <form>
+                <input type=text>
+                <input type=button value="buscar">
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="container_12" id="cuerpo">
+        <div class="grid_12" id="navegador">
+            <ul>
+                <li><a href="#">Portada</a></li>
+                <li><a href="#">Secciones</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <div class="grid_8">
+            <div class="itemportada">
+                <img src="images/foto-desarolloweb.jpg" width="258" height="250" alt="Foto" class="imagenitemportada" />
+                <div class="tituloitemportada"><a href="#">Título de un artículo</a></div>
+                <div class="autoritemportada">DesarrolloWeb.com</div>
+                <div class="introitemportada">
+                    <p>
+                        Lorem ipsum dolor sit amet...
+                    </p>
+                    <p>
+                        Curabitur placerat. Vivamus rhoncus est...
+                    </p>
+                </div>
+                <div class="comentariositemportada"><a href="#">3 comentarios</a></div>
+            </div>
+
+            <div class="itemportada">
+                <img src="images/foto-guiarte.jpg" width="256" height="252" alt="foto" class="imagenitemportada" />
+                <div class="tituloitemportada"><a href="#">Otro artículo destacado en la portada con titulo mayor</a>
+                </div>
+                <div class="autoritemportada">DesarrolloWeb.com</div>
+                <div class="introitemportada">
+                    <p>
+                        Nullam enim nulla...
+                    </p>
+                    <p>
+                        sagittis convallis...
+                    </p>
+                </div>
+                <div class="comentariositemportada"><a href="#">8 comentarios</a></div>
+            </div>
+
+            <div class="tituloitemportada"><a href="#">>> Ver contenidos anteriores</a></div>
+        </div>
+
+        <div class="grid_4">
+            <div class="titlateral">
+                <img src="images/tit-usuarios.jpg" width="91" height="20" alt="Usuarios" />
+            </div>
+            <div class="cuerpolateral">
+                <img src="images/usuarios-grande.png" width="91" height="118" alt="usuarios"
+                    class="imagencuerpolateral" />
+                <div class="textocuerpolateral">
+                    <form>
+                        <span>Nombre:</span>
+                        <input type="text" name="nombre" size="15" />
+                        <span>Clave:</span>
+                        <input type="text" name="clave" size="15" />
+                        <span><input type="submit" value="Entrar" /></span>
+                    </form>
+                </div>
+            </div>
+
+            <div class="titlateral">
+                <img src="images/tit-rss.png" width="41" height="21" alt="RSS" />
+            </div>
+            <div class="cuerpolateral">
+                <img src="images/RSS-grande.png" width="101" height="101" alt="" class="imagencuerpolateral" />
+                <div class="textocuerpolateral">
+                    <ul>
+                        <li><a href="#">Todos los contenidos</a></li>
+                        <li><a href="#">Artículos en RSS</a></li>
+                        <li><a href="#">Noticias en RSS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="titlateral">
+                <img src="images/tit-hablamos.png" width="205" height="26" alt="Hablamos de..." />
+            </div>
+            <div class="cuerpolateral">
+                <div class="nube">
+                    <span class="etiqueta6"><a href="#">html</a></span>
+                    <span class="etiqueta8"><a href="#">desarrollo</a></span>
+                    <span class="etiqueta5"><a href="#">javascript</a></span>
+                    <span class="etiqueta3"><a href="#">asp</a></span>
+                    <span class="etiqueta10"><a href="#">php</a></span>
+                    <span class="etiqueta5"><a href="#">diseño web</a></span>
+                    <span class="etiqueta4"><a href="#">servidores</a></span>
+                    <span class="etiqueta1"><a href="#">java</a></span>
+                    <span class="etiqueta3"><a href="#">apache</a></span>
+                    <span class="etiqueta6"><a href="#">promoción web</a></span>
+                    <span class="etiqueta9"><a href="#">ajax</a></span>
+                    <span class="etiqueta4"><a href="#">recursos</a></span>
+                    <span class="etiqueta5"><a href="#">dhtml</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="container_12" id="pie">
+        <div class="grid_8">
+            Enlaces del pie
+        </div>
+        <div class="grid_4">
+            Logotipo del pie
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="container_12" id="cuerpo">
+        <div class="grid_12">
+            <div class="titlateral">
+                <img src="images/tit-secciones-detalle.png" width="266" height="25" alt="Secciones al detalle" />
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="grid_3">
+            <div class="titcaja2"><img src="images/tit-noticias.png" width="96" height="15" alt="Noticias" /></div>
+            <div class="cuerpocaja2">
+                <div class="cuerponoticias">
+                    + <a href="#">Título de una noticia</a>
+                    <br />
+                    + <a href="#">Otro título de prueba</a>
+                    <br />
+                    + <a href="#">Más cosas de interés...</a>
+                    <br />
+                    + <a href="#">La última noticia</a>
+                    <br />
+                    [<a href="#">...</a>]
+                </div>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="titcaja2"><img src="images/tit-otrasecc.png" width="148" height="15" alt="Otra sección" /></div>
+            <div class="cuerpocaja2">
+                <div class="otrasecciontit"><a href="#">Título de una noticia</a></div>
+                <div class="otraseccioncuerpo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam enim nulla, condimentum ut,
+                    adipiscing in, rutrum ut, neque.
+                    <br />
+                    <a href="#">Ver más</a>.</div>
+            </div>
+        </div>
+        <div class="grid_6">
+            <div class="titcaja2"><img src="images/tit-comunidad.png" width="133" height="15" alt="Comunidad" /></div>
+            <div class="cuerpocaja2 cajacomunidad">
+                <img src="images/comunidad.jpg" width="452" height="138" alt="" />
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+
+    <div class="container_12" id="pie">
+        <div class="grid_8">
+            <div id="enlacespie">
+                <a href="#">Portada</a> | <a href="#">Acerca de</a> | <a href="#">Contacto</a> | <a
+                    href="#">Copyright</a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div id="logopie">
+                <img src="images/logopie.png" width="286" height="20" alt="Diseño desde cero" />
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
